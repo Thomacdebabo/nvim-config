@@ -58,4 +58,5 @@ require("lazy").setup({
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("config.treesitter")
+require("config.remap")
 require("lspconfig").pylsp.setup({})
