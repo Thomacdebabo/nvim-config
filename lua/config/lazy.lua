@@ -21,6 +21,8 @@ require("lazy").setup({
         { "williamboman/mason.nvim" },
         { "williamboman/mason-lspconfig.nvim" },
         { "neovim/nvim-lspconfig" },
+        { "hrsh7th/cmp-nvim-lsp" },
+        { "hrsh7th/nvim-cmp" },
         -- import/override with your plugins
         { import = "plugins" },
     },
@@ -61,4 +63,4 @@ require("config.treesitter")
 require("config.remap")
 require("config.lspzer")
 require("config.telescope")
-require("lspconfig").pylsp.setup({})
+require("lspconfig").jedi_language_server.setup({})
